@@ -12,6 +12,7 @@
 		554FD2911FFE0E080051F44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554FD28F1FFE0E080051F44A /* Main.storyboard */; };
 		554FD2931FFE0E080051F44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554FD2921FFE0E080051F44A /* Assets.xcassets */; };
 		554FD2961FFE0E080051F44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554FD2941FFE0E080051F44A /* LaunchScreen.storyboard */; };
+		C535DB1A8266ECDC47C356DB /* Pods_DropBox_Documentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45F784B531804FFC9E48F0 /* Pods_DropBox_Documentation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		554FD2921FFE0E080051F44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554FD2951FFE0E080051F44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554FD2971FFE0E080051F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554FD29D1FFE12190051F44A /* DropBox_Documentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DropBox_Documentation.entitlements; sourceTree = "<group>"; };
+		5D45F784B531804FFC9E48F0 /* Pods_DropBox_Documentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropBox_Documentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1C71F1D1A5BCAA7A91384E /* Pods-DropBox_Documentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropBox_Documentation.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropBox_Documentation/Pods-DropBox_Documentation.release.xcconfig"; sourceTree = "<group>"; };
+		ED6BC1A3F2BBBDEA27C6B5A7 /* Pods-DropBox_Documentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropBox_Documentation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropBox_Documentation/Pods-DropBox_Documentation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C535DB1A8266ECDC47C356DB /* Pods_DropBox_Documentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E162E5A2AA59A397125074 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED6BC1A3F2BBBDEA27C6B5A7 /* Pods-DropBox_Documentation.debug.xcconfig */,
+				6C1C71F1D1A5BCAA7A91384E /* Pods-DropBox_Documentation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		554FD27F1FFE0E080051F44A = {
 			isa = PBXGroup;
 			children = (
 				554FD28A1FFE0E080051F44A /* DropBox_Documentation */,
 				554FD2891FFE0E080051F44A /* Products */,
+				00E162E5A2AA59A397125074 /* Pods */,
+				B46B49B8A51F049F462DED6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		554FD28A1FFE0E080051F44A /* DropBox_Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				554FD29D1FFE12190051F44A /* DropBox_Documentation.entitlements */,
 				554FD28B1FFE0E080051F44A /* AppDelegate.swift */,
 				554FD28D1FFE0E080051F44A /* ViewController.swift */,
 				554FD28F1FFE0E080051F44A /* Main.storyboard */,
@@ -64,6 +82,14 @@
 			path = DropBox_Documentation;
 			sourceTree = "<group>";
 		};
+		B46B49B8A51F049F462DED6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D45F784B531804FFC9E48F0 /* Pods_DropBox_Documentation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554FD29A1FFE0E080051F44A /* Build configuration list for PBXNativeTarget "DropBox_Documentation" */;
 			buildPhases = (
+				E1A152993A9A8B8E130B8EE4 /* [CP] Check Pods Manifest.lock */,
 				554FD2841FFE0E080051F44A /* Sources */,
 				554FD2851FFE0E080051F44A /* Frameworks */,
 				554FD2861FFE0E080051F44A /* Resources */,
+				9AF8C9211F5D57EF8B1B1401 /* [CP] Embed Pods Frameworks */,
+				86AC75847E74DE7AEEFABF22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,8 +125,12 @@
 				TargetAttributes = {
 					554FD2871FFE0E080051F44A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = MG2L3YQ533;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86AC75847E74DE7AEEFABF22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropBox_Documentation/Pods-DropBox_Documentation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF8C9211F5D57EF8B1B1401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropBox_Documentation/Pods-DropBox_Documentation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A152993A9A8B8E130B8EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		554FD2841FFE0E080051F44A /* Sources */ = {
@@ -261,26 +342,32 @@
 		};
 		554FD29B1FFE0E080051F44A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6BC1A3F2BBBDEA27C6B5A7 /* Pods-DropBox_Documentation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MG2L3YQ533;
+				CODE_SIGN_ENTITLEMENTS = DropBox_Documentation/DropBox_Documentation.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DropBox_Documentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bs23.com.DropBox-Documentation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		554FD29C1FFE0E080051F44A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1C71F1D1A5BCAA7A91384E /* Pods-DropBox_Documentation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MG2L3YQ533;
+				CODE_SIGN_ENTITLEMENTS = DropBox_Documentation/DropBox_Documentation.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DropBox_Documentation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bs23.com.DropBox-Documentation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +391,7 @@
 				554FD29C1FFE0E080051F44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>IrtizaKhan</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -41,5 +43,33 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>dbapi-8-emm</string>
+        <string>dbapi-2</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>db-cvt9uiihs40ifgz</string>
+                </array>
+                <key>CFBundleURLName</key>
+                <string></string>
+            </dict>
+        </array>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>$(PRODUCT_NAME) microphone use</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>$(PRODUCT_NAME) photo use</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>$(PRODUCT_NAME) photo use</string>
 </dict>
 </plist>
